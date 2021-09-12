@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RightToLeftEx.MainPage"
+             Title="ימין לשמאל"
+             FlowDirection="RightToLeft">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="pink"></Setter>
+                <Setter Property="FontSize" Value="Large"></Setter>
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="pink"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Padding="0,20,0,0">
+        <Label Text="שם" FontSize="Small"></Label>
+        <Entry Placeholder="הכנס שם"></Entry>
+        <Label Text="גיל" FontSize="Small"></Label>
+        <Entry Placeholder="הכנס גיל"></Entry>
+        <Label Text="תאריך לידה" FontSize="Small"></Label>
+        <Entry Placeholder="הכנס תאריך לידה"></Entry>
+    </StackLayout>
+
+</ContentPage>
